@@ -1,0 +1,45 @@
+{
+  "name": "agile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "./node_modules/.bin/cucumber-js ./test/features --require ./test",
+    "json-mock": "json-mock data.json",
+    "migrate:make": "knex migrate:make --knexfile ./knexfile.js ",
+    "migrate:run": "knex migrate:latest --knexfile ./knexfile.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "expresss": "0.0.0",
+    "json-mock": "^0.1.0",
+    "json-server": "^0.15.1",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.19.2",
+    "mocha": "^6.2.1",
+    "multer": "^1.4.2",
+    "mysql": "^2.17.1",
+    "node-fetch": "^2.6.0",
+    "nodemailer": "^6.3.0",
+    "nodemon": "^1.19.1",
+    "path": "^0.12.7",
+    "quagga": "^0.12.1",
+    "routes": "^2.1.0",
+    "selenium-webdriver": "^4.0.0-alpha.5"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "chai-like": "^1.1.1",
+    "chai-things": "^0.2.0",
+    "cucumber": "^6.0.2",
+    "nyc": "^14.1.1"
+  }
+}
