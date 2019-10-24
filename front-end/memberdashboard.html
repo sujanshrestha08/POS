@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Member Dashboard</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link href="../css/simple-sidebar.css" rel="stylesheet" media="all">
+  <link href="../css/loginsign.css" rel="stylesheet" media="all">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading"><img src="../images/loginsignup/logo.jpg"></div>
+      <div class="list-group list-group-flush">
+        <a href="usersetting.html" class="list-group-item list-group-item-action bg-light"><i class="fa fa-user" aria-hidden="true"></i>Setting</a>
+        <a href="../login.html" class="list-group-item list-group-item-action bg-light"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
+
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom top-side-nav">
+        <button class="btn btn-primary" id="menu-toggle"><<</button>
+      </nav>
+      <div class="login-wrapper dis-page-user">
+        <div class="login-signup-main manufacturing membershipdash">
+          <h4 id="customerid"></h4>
+          <h4 id="pointscollection"></h4>
+                <!-- <img src="../images/loginsignup/logo.jpg"> -->
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="dab">
+                <div class="employee-description-table">
+                  <table>
+                  <thead>
+                    <th>Id</th>
+                    <th>Billno</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                   
+                  </thead>
+                  <tbody id="history"></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+ 
+  <!-- Bootstrap core JavaScript -->
+  <script src="../js/jquery.min.js"></script>
+<script src="../js/member.js"></script>
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>

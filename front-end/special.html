@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Icons font CSS-->
+    <link href="../vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="../vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link href="../css/simple-sidebar.css" rel="stylesheet" media="all">
+    <link href="../css/loginsign.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading"><img src="../images/loginsignup/logo.jpg"></div>
+      <div class="list-group list-group-flush">
+        <a href="admin-panel.html" class="list-group-item list-group-item-action bg-light"><i class="fa fa-user" aria-hidden="true"></i>Admin Panel</a>
+        <a href="alluser.html" class="list-group-item list-group-item-action bg-light"><i class="fa fa-users" aria-hidden="true"></i>View Users</a>
+        <a href="staff.html" class="list-group-item list-group-item-action bg-light"><i class="fa fa-users" aria-hidden="true"></i>View Staff</a>
+        <a href="inventory.html" class="list-group-item list-group-item-action bg-light"><i class="fa fa-archive" aria-hidden="true"></i>Inventory</a>
+        <a href="special.html" class="list-group-item list-group-item-action bg-light"><i class="fa fa-usd" aria-hidden="true"></i>Special Offers</a>
+        <a href="discount.html" class="list-group-item list-group-item-action bg-light"><i class="fa fa-money" aria-hidden="true"></i>Discount Offer</a>
+        <a href="mail.html" class="list-group-item list-group-item-action bg-light"><i class="fa fa-envelope" aria-hidden="true"></i>Mail</a>
+        <a href="../login.html" class="list-group-item list-group-item-action bg-light"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
+
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom top-side-nav">
+        <button class="btn btn-primary" id="menu-toggle"><<</button>
+      </nav>
+        <div class="login-wrapper">
+            <div class="login-signup-main manufacturing">
+                <!-- <img src="../images/loginsignup/logo.jpg"> -->
+            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="lform">
+                        <h2 class="ltitle">Special Offers</h2>
+                            <form method="POST">
+                                <div class="form-field">
+                                    <label>Offer Name</label>
+                                    <input type="text" name="email" id="offername">
+                                </div>
+                        
+                                <div class="form-field">
+                                    <label>Start Date</label>
+                                    <input type="date" name="email" id="dateto">
+                                </div>
+                                <div class="form-field">
+                                    <label>End Date</label>
+                                    <input type="date" name="phone" id="datefrom">
+                                </div>
+                                <div class="form-field">
+                                    <label>Discount</label>
+                                    <input type="text" name="phone" id="discount">
+                                </div>
+                                <div class="form-field">
+                                    <button type="submit" id="register">Submit</button>              
+                                </div>
+                        </form>
+                    </div><!--lform-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Registration Form</h2>
+                    <form method="POST">
+                       <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Special Offer Name</label>
+                                    <input class="input--style-4" type="text" name="email" id="offername">
+                                </div>
+                            </div>
+                          
+                        </div>
+                       
+                           
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Date to</label>
+                                    <input class="input--style-4" type="date" name="email" id="dateto">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Date From</label>
+                                    <input class="input--style-4" type="date" name="phone" id="datefrom">
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="input-group">
+                            
+                            <div class="input-group">
+                                    <label class="label">Discount</label>
+                                    <input class="input--style-4" type="text" name="phone" id="discount">
+                                </div>                        
+                            </div>
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" type="submit" id="register">Submit</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Jquery JS-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="../vendor/select2/select2.min.js"></script>
+    <script src="../vendor/datepicker/moment.min.js"></script>
+    <script src="../vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="../js/global.js"></script>
+    <script src="../js/special.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+  <script src="../js/jquery.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
+<!-- end document-->

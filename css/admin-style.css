@@ -1,0 +1,27 @@
+.admin-small-box{
+	border: 1px solid #dddddd;
+    border-radius: 15px;
+    min-height: 400px;
+    -webkit-box-shadow: 2px 7px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 7px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 2px 7px 5px 0px rgba(0,0,0,0.75);
+	margin: 50px 0;
+	position: relative;
+}
+.admin-price-section {
+    position: absolute;
+    bottom: 0;
+    min-height: 200px;
+    left: 0;
+    right: 0;
+}
+.admin-big-box{
+	min-height: 680px;
+	border: 1px solid #dddddd;
+	width: 70%;
+    margin: 50px auto;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+}

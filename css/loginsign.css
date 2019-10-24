@@ -1,0 +1,292 @@
+/*===Customized css=====*/
+@font-face {
+  font-family: 'JosefinSans';
+  src: url('../fonts/josefin/ .eot');
+  src: local('☺'), url('../fonts/josefin/JosefinSans.woff') format('woff'), url('../fonts/josefin/JosefinSans.ttf') format('truetype'), url('../fonts/josefin/JosefinSans.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'JosefinSans-Bold';
+  src: url('../fonts/josefin/JosefinSans-Bold.eot');
+  src: local('☺'), url('../fonts/josefin/JosefinSans-Bold.woff') format('woff'), url('../fonts/josefin/JosefinSans-Bold.ttf') format('truetype'), url('../fonts/josefin/JosefinSans-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.uppercase-text{
+	text-transform: uppercase;
+}
+body {
+	background: #D7DAD6;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+	line-height: normal;
+}
+.no-padding {
+	padding-left: 0;
+	padding-right: 0;
+}
+.login-wrapper {
+	width: 35%;
+    margin: 5% auto;
+    background: #5A91A4;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 10px 30px 10px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 10px 30px 10px rgba(0,0,0,0.75);
+	box-shadow: 0px 10px 30px 10px rgba(0,0,0,0.75);
+	padding-bottom: 20px;
+}
+.login-wrapper.dis-page, .employee-description {
+	width: 53%;
+  margin-left: 30%;
+}
+.employee-description {
+    margin: auto;
+  margin-left: 30%;
+  margin-bottom: 50px;
+}
+.login-wrapper.dis-page-user, .diagram-sec, .big-panel-sec {
+  width: 60%;
+  margin-left: 30%;
+}
+.diagram-sec, .big-panel-sec {
+  margin: auto;
+}
+.login-signup-main {
+	background: url(../images/loginsignup/back-banner.jpg) no-repeat;
+	background-size: cover;
+  padding: 20px 10px;
+  margin-bottom: 20px;
+  border-radius: 10px 10px 0 0;
+}
+.login-signup-main.manufacturing {
+  background: url(../images/loginsignup/small-img.jpg) no-repeat;
+  background-size: cover;
+  padding: 45px 10px;
+}
+.login-signup-main img {
+    width: 120px;
+}
+h2.ltitle {
+    text-align: center;
+    font-size: 30px;
+    font-family: JosefinSans-Bold, sans-serif;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.lform .form-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.lform .form-field label {
+	width: 150px;
+	min-width: 150px;
+	font-size: 16px;
+    margin-bottom: 0;
+    color: #000;
+    font-weight: 500;
+}
+.lform .form-field label.label {
+    width: 220px;
+    min-width: 220px;
+}
+.lform .form-field input, .lform .form-field select {
+   padding: 2px 6px;
+   width: 100%;
+   font-size: 14px;
+}
+.lform a {
+	color: #eeeeee;
+	font-family: JosefinSans, sans-serif;
+}
+button#login, button#register, button#scan, button#search {
+    display: block;
+    font-family: JosefinSans, sans-serif;
+    margin: 35px auto;
+    background: #0818da;
+    padding: 10px 70px;
+    line-height: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    border: 0;
+}
+/*Discount Page*/
+.dis-page-opt select {
+    font-size: 20px;
+    padding: 5px;
+}
+
+/*All user*/
+.employee-description-table table {
+  width: 100%;
+}
+/*Staff.html*/
+.staff-date-picker {
+    text-align: right;
+    margin-right: 50px;
+}
+.staff-card-box {
+    background: #D7DAD6;
+    text-align: center;
+    min-height: 150px;
+    padding: 15px 10px;
+}
+.staff-name h4, .staff-name h4 > h1, .employee-description-table tr th, tbody#tbodyone tr td, .staff-card-box .staff-name h1, .inventory-category .input-group label {
+    font-size: 18px;
+    font-family: JosefinSans, sans-serif;
+    line-height: normal;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+}
+.bodytitle, .staff-total-sales, .staff-card-box .bodytitle, .staff-card-box .staff-total-sales, .inventory-category .input-group select#men {
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.staff-card-box .staff-total-sales {
+  margin-top: 5px;
+}
+.employee-description-table table tbody#tbodyone tr td {
+    margin: 12px 0;
+}
+/*Inventory*/
+.inventory-category .input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.inventory-category .input-group label {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-right: 8px;
+}
+.inventory-category .input-group select#men {
+  padding: 5px 10px;
+}
+.staff-inventory-box {
+    min-height: 500px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.login-signup-main.manufacturing.member-dash {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+.login-signup-main.manufacturing.member-dash h4 {
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.big-panel-sec {
+  margin-bottom: 50px;
+  margin-left: 30%;
+}
+td#sales-btn button, td#totfin {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    background: #eee;
+    padding: 12px;
+    font-size: 18px;
+    line-height: normal;
+    font-family: JosefinSans-Bold, sans-serif;
+}
+td#totfin {
+  background: #5A91A4;
+  width: auto;
+  text-align: center;
+}
+/*.employee-description-table table {
+    background: #aaa;
+}*/
+.login-wrapper.admin-edit .lform .form-field input, .login-wrapper.admin-edit .lform .form-field select {
+  border-radius: 10px;
+  width: 150px;
+
+}
+.login-wrapper.home {
+    margin-left: 40%;
+}
+.login-signup-main.manufacturing.membershipdash h4 {
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.login-wrapper.dis-page.main {
+    width: 46%;
+}
+/*==========Media screen=========*/
+@media screen and (max-width: 1199px){
+  .login-wrapper, .login-wrapper.dis-page.main {
+    width: 50%;
+  }
+  .login-wrapper.home {
+    margin-left: 30%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .login-wrapper.home, .employee-description {
+    margin-left: auto;
+}
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light.border-bottom.top-side-nav {
+    position: fixed;
+    right: 0;
+    margin: 0;
+    float: right;
+    z-index: 9;
+    background: #D7DAD6 !important;
+  }
+  .login-wrapper.dis-page-user, .diagram-sec, .big-panel-sec, .login-wrapper.dis-page {
+    margin-left: auto;
+  }
+  #wrapper.toggled #sidebar-wrapper, .login-wrapper.dis-page-user, .diagram-sec, .big-panel-sec, .login-wrapper.dis-page, .login-wrapper, .login-wrapper.dis-page.main {
+    width: 80%;
+  }
+  #sidebar-wrapper .list-group {
+      width: 100%;
+  }
+  .staff-card-box {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 767px){
+  .login-wrapper, .employee-description {
+      width: 75%;
+  }
+  .admin-small-box {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 575px){ 
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light.border-bottom.top-side-nav {
+    padding: 0;
+  }
+  .login-wrapper, .login-wrapper.dis-page, .employee-description, .login-wrapper.dis-page.main {
+    width: 90%;
+  }
+  .login-wrapper .login-signup-main, .login-wrapper.admin-edit .form-field {
+    text-align: center;
+  }
+  .login-wrapper .login-signup-main img {
+    width: 90px;
+  }
+  .login-wrapper .lform .form-field label {
+    width: 100%;
+  }
+  .lform .form-field {
+    display: block;
+  }
+  .admin-small-box, .staff-card-box {
+    margin-bottom: 30px;
+  }
+}

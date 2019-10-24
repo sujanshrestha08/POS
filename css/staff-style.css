@@ -1,0 +1,37 @@
+.staff-page {
+    background: url(../images/staff.jpg)no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    margin-bottom: 50px;
+}
+.staff-date-picker {
+    width: 40%;
+    margin: auto;
+}
+.staff-date-picker #date {
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.staff-date-picker #date, .staff-date-picker #date:hover{
+    -webkit-appearance: none;
+    border: none;
+}
+
+.staff-panel .staff-card-box, .staff-inventory-box, .staff-inventory .staff-card-box {
+    border: 1px solid #dddddd;
+    border-radius: 15px;
+    min-height: 250px;
+    -webkit-box-shadow: 2px 7px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 7px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 7px 5px 0px rgba(0,0,0,0.75);
+    margin: 50px 0;
+    padding: 15px;
+}
+.staff-inventory-box{
+	min-height: 500px;
+    width: 80%;
+    margin: 50px auto;
+}

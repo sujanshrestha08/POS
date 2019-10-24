@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+ <!-- Icons font CSS-->
+    <link href="../vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <!-- <link href="../vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="../vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">-->
+
+    <!-- Main CSS-->
+    <!-- <link href="../css/main.css" rel="stylesheet" media="all">
+        <link href="../css/style2.css" rel="stylesheet" media="all"> -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link href="../css/simple-sidebar.css" rel="stylesheet" media="all">
+    <link href="../css/loginsign.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading"><img src="../images/loginsignup/logo.jpg"></div>
+      <div class="list-group list-group-flush">
+        <a href="home.html" class="list-group-item list-group-item-action bg-light"><i class="fa fa-user" aria-hidden="true"></i>Dashboard</a>
+        <a href="find.html" class="list-group-item list-group-item-action bg-light"><i class="fa fa-money" aria-hidden="true"></i>Search</a>
+        <a href="../login.html" class="list-group-item list-group-item-action bg-light"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
+
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom top-side-nav">
+        <button class="btn btn-primary" id="menu-toggle"><<</button>
+      </nav>
+        <div class="login-wrapper dis-page">
+            <div class="login-signup-main manufacturing">
+                <!-- <img src="../images/loginsignup/logo.jpg"> -->
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="lform">
+                            <h2 class="ltitle">Search Product</h2>
+                                <form method="POST">
+                                    <div class="form-field">
+                                        <label>Bill No :</label>
+                                        <input  type="text" id="billno">
+                                    </div>
+                            
+                                <div class="form-field">
+                                    <label>Date to :</label>
+                                    <input class="input--style-4" type="date" name="email" id="searchdate">
+                                </div>
+                                <div class="form-field">
+                                    <button id="search">Search</button>            
+                                </div>
+                            </form>
+                        </div><!--lform-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="dab">
+                        <div class="employee-description-table">
+                            <table>
+                                <thead>
+                                    <th>ID</th>
+                                    <th>BIllno</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                </thead>
+                                <tbody id="tbodyone"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+      
+
+
+    <!-- <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Login Form</h2>
+                    <form method="POST">
+                                                      <div class="input-group">
+                            <div class="col-2">
+                            
+                                    <label class="label">BillNo</label>
+                                    <input  type="text" id="billno">
+                                </div>
+                                                       
+                            </div>
+                        
+                         <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Date to</label>
+                                    <input class="input--style-4" type="date" name="email" id="searchdate">
+                                </div>
+                            </div>
+                        </div>
+                       <button class="btn btn--radius-2 btn--blue" id="search">Search</button>
+                            
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="employee-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-11">
+                    <div class="employee-description-table">
+                        <table>
+                            <thead>
+                                
+                                <tr>
+                                    <th>ID</th>
+                                    <th>BIllno</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                </tr>
+                               
+                            </thead>
+                          <tbody id="tbodyone"></tbody>
+                               
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> -->
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <!-- Main JS-->
+    <script src="../js/global.js"></script>
+    <script src="../js/find.js"></script>
+      <!-- Bootstrap core JavaScript -->
+  <script src="../js/jquery.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
+<!-- end document-->
